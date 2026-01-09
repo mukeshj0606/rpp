@@ -430,7 +430,7 @@ PYBIND11_MODULE(rpp_pybind, m) {
         .def_readonly_static("NHWC", &RpptLayout::NHWC);
     
     // Types module
-    auto types_module = m.def_submodule("types", "RPP type definitions");
+    auto types_module = m.def_submodule("rpp_types", "RPP type definitions");
     
     py::class_<RppBackend>(types_module, "RppBackend")
         .def_readonly_static("HOST", &RPP_HOST_BACKEND)

@@ -12,10 +12,10 @@ Re-exports C++ types and provides Python convenience functions.
 import rpp_pybind
 
 # Re-export enums for easier access
-RppBackend = rpp_pybind.types.RppBackend
-RppStatus = rpp_pybind.types.RppStatus
-RpptDataType = rpp_pybind.types.RpptDataType
-RpptLayout = rpp_pybind.types.RpptLayout
+RppBackend = rpp_pybind.rpp_types.RppBackend
+RppStatus = rpp_pybind.rpp_types.RppStatus
+RpptDataType = rpp_pybind.rpp_types.RpptDataType
+RpptLayout = rpp_pybind.rpp_types.RpptLayout
 
 # Shortcuts for common values
 HOST = RppBackend.HOST
